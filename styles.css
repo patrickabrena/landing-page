@@ -2,3 +2,85 @@
 /*------------------------*/
 /*------------------------*/
 /*css for the animated cup*/
+html {
+  min-height: 100vh;
+  margin: 0;
+  padding: 0;
+}
+body {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+  margin: 0;
+}
+body > * {
+  /* flex: 1; */
+}
+.header {
+  background: #a8e6cf;
+  display: flex;
+}
+.header > * {
+  flex: 1;
+  border: solid black 2px;
+}
+.nav-links ul {
+  display: flex;
+  flex-direction: row;
+}
+ul {
+  list-style: none;
+  gap: 1rem;
+}
+a:link {
+  text-decoration: none;
+}
+
+a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+a:active {
+  text-decoration: underline;
+}
+
+.under-header {
+  background: #fdffab;
+  display: flex;
+}
+.under-header > * {
+  border: solid black 2px;
+  /* flex: 1; */
+}
+.text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  /* align-items: center; */
+}
+.text > * {
+  border: solid black 1px;
+}
+.text small {
+  width: 4rem;
+}
+button {
+  padding: 1rem 2rem;
+}
+.random-info {
+  background: #ffd3b6;
+}
+.quote {
+  background: #ffaaa5;
+}
+.call-to-action {
+  background: #a8e6cf;
+}
+.footer {
+  background: #fdffab;
+}
