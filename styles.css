@@ -9,8 +9,8 @@ body {
   flex-direction: column;
   padding: 0;
   margin: 0;
-  border: solid salmon 8px;
-  font-family: "Courier New", Courier, monospace;
+  /* border: solid salmon 8px; */
+  font-family: Verdana, sans-serif;
 }
 body > * {
   padding: 0.5rem 8rem;
@@ -27,7 +27,7 @@ body > * {
   display: flex;
   align-self: center;
   font-weight: 600;
-  color: aliceblue;
+  color: rgb(255, 227, 232);
 }
 
 .nav-links ul {
@@ -42,7 +42,7 @@ ul {
 
 a:link {
   text-decoration: none;
-  color: aliceblue;
+  color: rgb(255, 227, 232);
 }
 
 a:visited {
@@ -56,10 +56,15 @@ a:hover {
 a:active {
   text-decoration: underline;
 }
-
+button:hover {
+  color: rgb(210, 36, 65);
+  background-color: rgb(255, 227, 232);
+  border: solid rgb(174, 32, 56) 3px;
+}
 .under-header {
   display: flex;
   background-color: rgb(210, 36, 65);
+  height: 500px;
 }
 .under-header > * {
   /* border: solid maroon 2px; */
@@ -71,7 +76,7 @@ a:active {
   flex-direction: column;
   text-align: left;
   justify-content: center;
-  color: aliceblue;
+  color: rgb(255, 227, 232);
 }
 .text > * {
   /* border: solid black 1px; */
@@ -86,12 +91,16 @@ bold {
 }
 button {
   padding: 1rem 2rem;
-  font-family: "Courier New", Courier, monospace;
+  font-family: Verdana, sans-serif;
   background-color: pink;
-  border-radius: 4%;
-  box-shadow: 6px 3px 3px rgb(195, 72, 92);
+  border-radius: 15px;
+  border: solid rgb(210, 36, 65) 3px;
 
   font-weight: 600;
+}
+.gap {
+  flex: 0;
+  padding: 0rem 3rem;
 }
 .placeholder-img {
   display: flex;
@@ -137,19 +146,23 @@ actual-box > * {
   padding: 15px 15px;
   margin: 0 1rem;
   width: 200px;
-  height: 200px;
+  /* height: 200px; */
+
   /* border: dotted pink; */
 }
 .display {
-  width: 100px;
-  height: 100px;
+  width: 210px;
+  height: 210px;
   border: solid pink 5px;
   border-radius: 3%;
   align-self: center;
+  margin-bottom: 10px;
 }
 .box-text {
-  font-size: x-small;
-  text-align: center;
+  display: flex;
+  flex: 1;
+  font-size: 13px;
+  text-align: left;
 }
 .quote {
   display: flex;
@@ -167,13 +180,14 @@ author {
   align-self: self-end;
 }
 .call-to-action {
+  font-weight: bold;
   padding: 3rem 8rem;
   background-color: rgb(255, 138, 158);
 }
 .banner {
   display: flex;
   padding: 3rem 3rem;
-  border: solid black 1px;
+  border: solid rgb(255, 227, 232);
   border-radius: 10px;
   background-color: rgb(210, 36, 65);
 }
@@ -183,6 +197,30 @@ author {
   flex-direction: column;
   font-weight: 600;
   color: rgb(255, 227, 232);
+}
+.bt-top {
+  font-size: 22px;
+  padding-bottom: 3px;
+}
+.footer {
+  display: flex;
+  background-color: rgb(210, 36, 65);
+  justify-content: space-between;
+}
+.copyright {
+  display: flex;
+  color: rgb(255, 227, 232);
+  align-self: center;
+}
+.copyright-text {
+  padding-right: 15px;
+}
+
+.footer-links ul {
+  display: flex;
+  flex-direction: row;
+  flex: 1;
+  justify-content: flex-end;
 }
 /* .random-info {
   background: #ffd3b6;
